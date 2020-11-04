@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="sorteio.css" rel="stylesheet" type="text/css">
+    <title>Sorteio</title>
+</head>
+<body>
+    <h1>Sorteio</h1>
+    <p>Valor mínimo:<input type="number" name="minimo" id="minimo"></p>
+    <p>Valor máximo:<input type="number" name="maximo" id="maximo"></p>
+    <button onclick="sorteio()">Sortear</button>
+    <h1 id="resultado"></h1>
+
+    
+    <script>
+        function sorteio(){
+    var min = document.getElementById("minimo").value;
+    var max = document.getElementById("maximo").value;
+    var sort = Math.floor(Math.random()*Math.floor(max))
+
+  while(sort<min){
+
+    sort = Math.floor(Math.random()*Math.floor(max));
+  }
+ 
+    document.getElementById("resultado").innerHTML=sort;
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{padding: 100px;display: block;
+     width: 1140px;margin-top: 30px; margin: 5 auto;
+     font-size: 20px; background: azure;
+     border-width: 5px;
+     border-style: double;
+     font-style: italic;font-family: Arial, Helvetica, sans-serif;}
+h1{text-align: center;}
+p{text-align: center;}
+button{width: 350px; margin-left: 400px;cursor: pointer;}
+button:hover{background: cornflowerblue;color: cornsilk;}
+input{padding: 2px;width: 120px;border-color: crimson;}
+
